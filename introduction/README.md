@@ -38,3 +38,4 @@ input元素的新類型：date, email, url等等。
 
 * [w3school cn html5](http://www.w3school.com.cn/html5/index.asp)
 * [w3school en html5](http://www.w3schools.com/html/html5_intro.asp)
+* [REC-html5-20141028](https://www.w3.org/TR/html5/Overview.html)
