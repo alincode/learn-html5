@@ -1,4 +1,10 @@
-# Semantic Elements in HTML5
+# 語意元素 in HTML5
+
+*解析題庫*：1-31
+
+透過定義的元素，可以了解它與其他內容的差異。
+
+
 
 Semantic elements = elements with a meaning.
 
@@ -25,7 +31,7 @@ HTML5 defines eight new semantic elements. All these are block-level elements.
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_figcaption.asp">&lt;figcaption&gt;</a></td>
-<td>Defines a caption for a &lt;figure&gt; element</td>
+<td>描述圖片的標題, Defines a caption for a &lt;figure&gt; element</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_figure.asp">&lt;figure&gt;</a></td>
@@ -38,7 +44,7 @@ listings, etc.</td>
 </tr>
 <tr>
 <td><a href=http://www.w3schools.com"/tags/tag_header.asp">&lt;header&gt;</a></td>
-<td>Specifies a header for a document or section</td>
+<td>描述文件或區段之標題, Specifies a header for a document or section</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_main.asp">&lt;main&gt;</a></td>

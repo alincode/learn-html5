@@ -1,10 +1,21 @@
 # 簡介
 
-HTML5是HTML最新的修訂版本，由全球資訊網協會（W3C）完成標準制定。目標是取代1999年所製定的HTML 4.01和XHTML 1.0標準，以期望網路標準達到符合當代的網路需求。
+HTML5是HTML最新的修訂版本，由 W3C 完成標準制定。目標是取代1999年所製定的HTML 4.01和XHTML 1.0標準，以期望網路標準達到符合當代的網路需求。
 
 **廣義論及HTML5**
 
-實際指的是包括HTML、CSS和JavaScript在內的一套技術組合。它希望能夠減少網頁瀏覽器對於需要外掛程式的豐富性網路應用服務（RIA），例如：Flash、Silverlight與 JavaFX的需求，並且提供更多能有效加強網路應用的標準集。
+實際指的是包括HTML、CSS和JavaScript在內的一套技術組合。它希望能夠減少網頁瀏覽器對於需要外掛程式的豐富性網路應用服務（RIA），例如：`Flash`、`Silverlight`與 `JavaFX`的需求，並且提供更多能有效加強網路應用的標準集。
+
+**HTML5的特色**
+
+* 支援本機儲存
+* 支援 CSS3
+* 更多的表單元素：url, email
+* 更多的新的元素：nav, footer
+* 更多的多媒體支援 video, svg, canvas
+* 有更佳的容錯性，例如自動補上缺少的必要標籤，使用者可避免看到網站撰寫的錯誤。
+
+*題庫解析*：1-05, 1-19, 1-21
 
 **具體來說**
 
@@ -27,6 +38,13 @@ input元素的新類型：date, email, url等等。
 
 [資料來源 Wiki](https://zh.wikipedia.org/wiki/HTML5)
 
+**上課方式**
+
+* 先註冊一個 github 帳號
+    * [影片參考](https://www.youtube.com/watch?v=LIhoP5omcG4)
+* 一個小時一章節
+* learning from doing
+
 **工具網站**
 
 * [CodePen - Front End Developer Playground &amp; Code Editor in the Browser](https://codepen.io/)
@@ -39,3 +57,14 @@ input元素的新類型：date, email, url等等。
 * [w3school cn html5](http://www.w3school.com.cn/html5/index.asp)
 * [w3school en html5](http://www.w3schools.com/html/html5_intro.asp)
 * [REC-html5-20141028](https://www.w3.org/TR/html5/Overview.html)
+
+**自學網站**
+
+* [FreeCodeCamp](https://www.freecodecamp.com/)
+* [Code School](https://codeschool.com/)
+* [Codecademy](https://www.codecademy.com/)
+
+**參考書籍**
+
+* Oreilly - HTML5: Up and Running
+* TQC+ 網頁程式設計認證指南 - HTML5

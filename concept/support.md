@@ -1,8 +1,7 @@
 # 相容性
 
 * 是一份規格書，讓大家朝往同個方向前進。
-* Chrome 跟 Firefox 支援度最高
-* IE 跟 Safari 支援度最低
+* Chrome 跟 Firefox 支援度最高，IE 跟 Safari 支援度最低
 * IE9以後的版本，對HTML5的支援度才有提升
 * 所有瀏覽器，都支援 HTML5 的~~所有~~`部分`功能
 

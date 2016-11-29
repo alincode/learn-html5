@@ -5,7 +5,7 @@
 
 ### 不要用 table 的原因是？
 
-```
+```html
 <tr>
     <td><td>
     <td><td>
@@ -13,13 +13,19 @@
 </tr>
 ```
 
-```
+```html
 <div>
+    <li>/<li>
+    <li>/<li>
+    <li>/<li>
+    <li>/<li>
+    <li>/<li>
+</div>
 ```
 
 ### 不要用 element style 屬性
 
-```
+```html
 <div style="color:red;">
 ```
 

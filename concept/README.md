@@ -1,17 +1,9 @@
 # 基本應用
 
-* 元素 element
-* 屬性 attribute
-* 事件 event
+### 題庫解析
 
-`<element attribute="attribute-value">`
-
-**範例**
-
-`<div class="nickname" onclick="">alincode</div>`
-
-
-### 1-01 運用 Key-Value 來快速存取`本地端`資料庫。
+* 運用 Key-Value 來快速存取`本地端`資料庫。(1-01)
+* 支援即時通訊 WebSocket, Notifications。(1-02)
 
 ### 1-02 Notification
 
@@ -27,9 +19,11 @@ Notification.requestPermission()
 Notification.permission
 ```
 
-### 1-11
+### 鍵盤事件順序
 
-onkeydown ---> onkeypress ---> onkeyup
+*解析題庫*：1-11
+
+`onkeydown ---> onkeypress ---> onkeyup`
 
 
 1-20 frame, option
