@@ -2,15 +2,8 @@
 
 *解析題庫*：1-31
 
-透過定義的元素，可以了解它與其他內容的差異。
-
-
-
-Semantic elements = elements with a meaning.
-
-Define Semantic Elements as Block Elements
-HTML5 defines eight new semantic elements. All these are block-level elements.
-
+* 有特殊意義的元素，由名稱可以了解到它與其他內容的差異。
+* 語意元素全部都是 block elements
 
 <table>
 <tbody><tr>

@@ -2,7 +2,8 @@
 
 **定義**
 
-Defines sound content
+* Defines sound content
+* 是 Media Element
 
 Before HTML5, audio files could only be played in a browser with a plug-in (like flash).
 

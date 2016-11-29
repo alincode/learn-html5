@@ -3,8 +3,20 @@
 **定義**
 
 * Defines a video
-* IE9 才支援
+* 是 Media Element
+* 是嵌入是內容（embedded content)
+* IE 要到 9.0 版本才支援
 * tips：The autoplay attribute does not work in mobile devices like iPad and iPhone.
+
+**範例**
+
+```html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+```
 
 **瀏覽器支援度**
 
@@ -64,8 +76,95 @@ Your browser does not support the video tag.
 http://www.w3schools.com/html/html5_video.asp
 http://www.w3schools.com/jsref/dom_obj_video.asp
 http://www.w3schools.com/tags/ref_av_dom.asp
+http://www.w3schools.com/tags/tag_video.asp
 
-### source
+### controls
+
+* Play
+* Pause
+* Seeking
+* Volume
+* Fullscreen toggle
+* Captions/Subtitles (when available)
+* Track (when available)
+
+http://www.w3schools.com/tags/att_video_controls.asp
+
+*解析題庫*：4-16
+
+### poster
+
+在 video 下載錢，指定顯示的圖像。
+
+```
+<video controls="controls" paster="image.gif"></video>
+```
+
+### preload
+
+**語法**
+
+`<video preload="auto|metadata|none">`
+
+*解析題庫*：4-01
+
+http://www.w3schools.com/tags/att_video_preload.asp
+
+### loop
+
+播放結束之後，重新開始播放。
+
+**語法**
+
+`<video loop>`
+
+*解析題庫*：4-02
+
+http://www.w3schools.com/tags/att_video_loop.asp
+
+## Video DOM event
+
+**事件發生的順序**
+
+* loadstart
+* durationchange
+* loadedmetadata
+* loadeddata
+* progress
+* canplay
+* canplaythrough
+
+**載入成功**
+
+* onloadstart
+* oncanplay
+* onloadedmetadata
+
+**載入失敗**
+
+* onerror
+* onloadstart
+
+**多媒體黨無法下載**
+
+* onstalled
+
+**播放完畢**
+
+* onended
+
+**實際下載音頻和開始播放**
+
+```js
+var vid = document.getElementById("myVideo");
+vid.oncanplaythrough = function() {
+    alert("Can play through video without stopping");
+};
+```
+
+http://www.w3schools.com/TAgs/av_event_canplaythrough.asp
+
+## `<source>`
 
 **定義**
 
@@ -73,11 +172,19 @@ Defines multiple media resources for media elements, such as `<video>` and `<aud
 
 The `<source>` element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
 
-**資料來源**
+```html
+<vidoe>
+    <source media="screen and (max-height:700px)">
+    或
+    <source media="not screen and (max-height:700px)">
+    或
+    <source media="screen, (max-height:700px)">
+</video>
+```
 
 http://www.w3schools.com/jsref/dom_obj_source.asp
 
-### track
+## `<track>`
 
 **定義**
 
@@ -98,3 +205,40 @@ This element is used to specify subtitles, caption files or other files containi
 
 http://www.w3schools.com/tags/tag_track.asp
 https://dev.w3.org/html5/spec-preview/content-models.html
+http://www.w3schools.com/TagS/ref_av_dom.asp
+
+## Video DOM method
+
+### canplaytype
+
+回傳是否能播放指定的影片檔案格式
+
+```
+var vid = document.createElement('video');
+isSupp = vid.canPlayType(vidType+';codecs="'+codType+'"');
+```
+
+http://www.w3schools.com/TagS/av_met_canplaytype.asp
+
+## Video Dom Properties
+
+### defaultPlaybackRate
+
+設定播放速度
+
+```
+var vid = document.getElementById("myVideo");
+vid.defaultPlaybackRate = 0.5;
+```
+
+http://www.w3schools.com/TagS/av_prop_defaultplaybackrate.asp
+
+## DOM error Property
+
+* 1 = MEDIA_ERR_ABORTED - fetching process aborted by user
+* 2 = MEDIA_ERR_NETWORK - error occurred when downloading
+* 3 = MEDIA_ERR_DECODE - error occurred when decoding
+* 4 = MEDIA_ERR_SRC_NOT_SUPPORTED - audio/video not supported
+
+*題庫解析*：4-42
+

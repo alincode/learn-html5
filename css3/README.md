@@ -2,13 +2,65 @@
 
 ### Selector
 
+```html
+<footer id="layout-footer" class="myclass">
+    <address>OOXX</adress>
+</footer>
+```
+
+**universal 通用選擇器**
+
+```
+* {...}
+```
+
+**ID 選擇器**
+
+```
+#layout-footer {...}
+```
+
+**class 類型選擇器**
+
+```
+.myclass {...}
+```
+
+**type 型態選擇器**
+
+```
+footer {...}
+```
+
+**child 子選擇器**
+
+```
+footer address {...}
+```
+
+**descendant 後代選擇器**
+
+```
+footer address {...}
+```
+
+### CSS3 新增的語法
+
+* border-image
+* border-radius 圓角
+
 ### Color
 
 **RGB**
 
-**HSL**
+**RGBA**
 
-**HSLA**
+**HSL, HSLA**
+
+* h: Hue, 色相
+* s: Saturation, 飽和度
+* l: Lightness, 亮度
+* a: Alpha, 不透明度
 
 ### backgrounds
 
@@ -24,14 +76,6 @@
 
 **box-shadow**
 
-**border-radius**
-
-css3
-
-**border-image**
-
-css3
-
 ### box
 
 **border-box**
@@ -46,13 +90,42 @@ css3
 
 **font-style**
 
-### resize:both; overflow:auto
+### resize
+
+讓使用者能改變指定元素的大寫
+
+`resize:both; overflow:auto`
+
+**參數**
+
+* none
+* both
+* vertical
+
+### overflow
+
+* visible
+* scroll
+* auto
+
+### box-sizing
+
+指定元素放入某個區域的方式
 
 ### position
 
+* relative: 該元素原應在的位置
+
 ### em, px, cm, mm
 
-### text-align: justified
+1em = 16 px
+
+### text-align
+
+* left
+* right
+* center
+* justified
 
 http://www.w3schools.com/cssref/css3_pr_text-justify.asp
 
