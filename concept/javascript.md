@@ -3,8 +3,6 @@
 * 採用物件導向程式語言
 * 為直譯是程式語言
 
-*解析題庫*：1-30
-
 ### 注意事項
 
 * 分號(;)的使用
@@ -19,11 +17,9 @@ var sayHi = function(name){
 sayHi('alincode');
 ```
 
-*解析題庫*：1-36
-
 ### 布林運算
 
-*解析題庫*：1-09
+**範例一**
 
 ```js
 var x = 3;
@@ -32,13 +28,13 @@ console.log(x === "3"); // false
 console.log(x === 3);   // true
 ```
 
-*解析題庫*：1-12
+**範例二**
 
 ```js
 console.log('0 % 3 == 0'); // true
 ```
 
-*解析題庫*：1-48
+**範例三**
 
 `!null = true`
 
@@ -46,7 +42,7 @@ http://www.w3schools.com/js/js_booleans.asp
 
 ### 數字連接字串
 
-*解析題庫*：1-03, 1-42
+**範例一**
 
 ```js
 
@@ -58,7 +54,7 @@ cnosole.log(result);
 
 ```
 
-http://www.w3school.com.cn/js/pro_js_typeconversion.asp
+**範例二**
 
 ```js
 // 八進位
@@ -75,11 +71,12 @@ console.log(test); // 102
 
 `number.toString(radix)`
 
-http://www.w3schools.com/jsref/jsref_tostring_number.asp
+**延伸閱讀**
+
+* http://www.w3schools.com/jsref/jsref_tostring_number.asp
+* http://www.w3school.com.cn/js/pro_js_typeconversion.asp
 
 ### 陣列 (Array)
-
-*解析題庫*：1-50
 
 **宣告**
 
@@ -100,8 +97,6 @@ console.log(family[0]); // output: mother
 ### 物件
 
 **宣告**
-
-*解析題庫*：1-38
 
 ```js
 
@@ -193,8 +188,6 @@ function example(){
 
 ### 修改元素內容
 
-*解析題庫*：1-22
-
 ```html
 <p id="A">Output A</p>
 <p id="B">Output B</p>
@@ -210,8 +203,6 @@ function example(){
 ```
 
 ### ECMAScript
-
-*解析題庫*：1-06
 
 ECMAScript是由ECMA-262標準化的腳本語言的名稱。JavaScript和JScript與ECMAScript相容，但包含超出ECMAScript的功能。
 

@@ -65,5 +65,71 @@ listings, etc.</td>
 </tr>
 </tbody></table>
 
+### article
 
-http://www.w3schools.com/html/html5_semantic_elements.asp
+* 通常擁有自己的標題
+* `<article>` 中，還可以在包含 `<article>`
+* 表示網頁中一段完整的文件，或可單獨使用的文件
+
+*題庫解析*：2-36
+
+### section
+
+* 包含內容及標題
+* 可以將一段文章，分成好幾個 `<section>`
+
+*題庫解析*：2-38
+
+
+### figure
+
+* 用來包含影像及其說明，以便將圖及說明一連結在一起。
+* [demo](http://www.w3schools.com/TAgs/tryit.asp?filename=tryhtml5_figcaption)
+
+```html
+<figure>
+  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+```
+
+http://www.w3schools.com/TAgs/tag_figure.asp
+
+### figcaption
+
+* 圖片標題
+* [demo](http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_figcaption)
+
+*題庫解析*：2-11
+
+http://www.w3schools.com/TAgs/tag_figcaption.asp
+
+### aside
+
+* 適合放置廣告
+
+*題庫解析*：2-40
+
+### header
+
+* 可以加入 table
+* 可以加入搜尋表單
+* 可以加入 `<nav>`
+
+*題庫解析*：2-41
+
+### nav
+
+*題庫解析*：2-41
+
+### footer
+
+* 一個網頁中，可以有多個 `<footer>`
+* 適合用來表示版權資訊
+* 適用用來表示相關的文章連結資訊
+
+*題庫解析*：2-42
+
+
+### 延伸閱讀
+* http://www.w3schools.com/html/html5_semantic_elements.asp

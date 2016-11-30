@@ -1,9 +1,12 @@
 # 頁面設計
 
 
+**HTML5 廢除的元素**
+
+* `<big>`
 
 
-**參考來源**
+**延伸閱讀**
 
 * [HTML Global Attributes](http://www.w3schools.com/tags/ref_standardattributes.asp)
 * [HTML Event Attributes](http://www.w3schools.com/tags/ref_eventattributes.asp)

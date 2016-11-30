@@ -2,10 +2,7 @@
 
 * 不分大小寫
 
-
 **HTML5改善了哪些**
-
-*題庫解析*：1-18
 
 * 將 vidoe 和 audio 分開定義
 * 加入了多種 input type，例如 url, email
@@ -13,8 +10,6 @@
 * 重新定義 b, i 元素含義
 
 **HTML5宣告**
-
-*題庫解析*：1-17
 
 * `<DOCTYPE>` 不需要結束標籤
 
@@ -32,7 +27,7 @@ The content of the document......
 
 ### metedata
 
-1-37
+*題庫解析*：1-37
 
 ### 補充
 

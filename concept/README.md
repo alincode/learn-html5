@@ -29,7 +29,7 @@ Notification.permission
 1-20 frame, option
 
 
-1-28 codec
+1-28 codec`
 
 1-30 javascript 採用物件導向語言
 

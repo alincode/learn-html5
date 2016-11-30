@@ -1,4 +1,7 @@
-# tag
+# 元素
+
+* element
+* tag
 
 ### hidden
 
@@ -49,29 +52,6 @@ http://www.w3schools.com/TAgs/tag_del.asp
 ### abbr
 
 *題庫解析*：2-10
-
-### figure
-
-* 用來包含影像及其說明，以便將圖及說明一連結在一起。
-* [demo](http://www.w3schools.com/TAgs/tryit.asp?filename=tryhtml5_figcaption)
-
-```html
-<figure>
-  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
-  <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
-</figure>
-```
-
-http://www.w3schools.com/TAgs/tag_figure.asp
-
-### figcaption
-
-* 圖片標題
-* [demo](http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_figcaption)
-
-*題庫解析*：2-11
-
-http://www.w3schools.com/TAgs/tag_figcaption.asp
 
 ### pre
 
@@ -217,50 +197,9 @@ http://www.w3schools.com/TAgs/att_img_usemap.asp
 
 *題庫解析*：2-35
 
-### article
-
-* 通常擁有自己的標題
-* `<article>` 中，還可以在包含 `<article>`
-* 表示網頁中一段完整的文件，或可單獨使用的文件
-
-*題庫解析*：2-36
-
-### section
-
-* 包含內容及標題
-* 可以將一段文章，分成好幾個 `<section>`
-
-*題庫解析*：2-38
-
 ### media
 
 *題庫解析*：2-39
-
-### aside
-
-* 適合放置廣告
-
-*題庫解析*：2-40
-
-### header
-
-* 可以加入 table
-* 可以加入搜尋表單
-* 可以加入 `<nav>`
-
-*題庫解析*：2-41
-
-### nav
-
-*題庫解析*：2-41
-
-### footer
-
-* 一個網頁中，可以有多個 `<footer>`
-* 適合用來表示版權資訊
-* 適用用來表示相關的文章連結資訊
-
-*題庫解析*：2-42
 
 ### address
 
@@ -272,11 +211,9 @@ http://www.w3schools.com/TAgs/att_img_usemap.asp
 
 **定義**
 
-方便使用者使用之按鈕
-
-The type attribute specifies the type of command.
-
-Internet Explorer 9 (not earlier or later versions), supports the type attribute. However it only supports the "command" type.
+* 方便使用者使用之按鈕
+* The type attribute specifies the type of command.
+* Internet Explorer 9 (not earlier or later versions), supports the type attribute. However it only supports the "command" type.
 
 http://www.w3schools.com/tags/att_command_type.asp
 
@@ -298,41 +235,3 @@ http://www.w3schools.com/tags/att_command_type.asp
 *題庫解析*：2-18
 
 
-## phrase tags
-
-<table>
-  <tbody><tr>
-    <th style="width:15%">Tag</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td width="20%">&lt;em&gt;</td>
-    <td width="80%">強調</td>
-  </tr>
-  <tr>
-    <td>&lt;strong&gt;</td>
-    <td>重要</td>
-  </tr>
-  <tr>
-    <td>&lt;code&gt;</td>
-    <td>Defines a piece of computer code</td>
-  </tr>
-  <tr>
-    <td>&lt;samp&gt;</td>
-    <td>程式或電腦產生出來的結果</td>
-  </tr>
-  <tr>
-    <td>&lt;kbd&gt;</td>
-    <td>使用者透過鍵盤輸入的值</td>
-  </tr>
-  <tr>
-    <td>&lt;var&gt;</td>
-    <td>變數</td>
-  </tr>
-  </tbody></table>
-
-*題庫解析*：2-01, 2-25, 2-26, 2-27
-
-## HTML5 廢除的元素
-
-* `<big>`

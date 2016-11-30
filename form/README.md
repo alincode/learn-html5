@@ -1,8 +1,8 @@
 # 表單設計
 
-**觸發驗證的時機點**
+* 觸發驗證的時機點，是在資料變動的時候
 
-## HTML5新增的input類型##
+## HTML5新增的input類型
 
 * color
 * date
@@ -17,6 +17,17 @@
 * time
 * url(not supported in IE9 and earlier versions.)
 * week
+
+**檢查資料格式**
+
+* url
+* email
+
+**不檢查資料格式**
+
+* tel
+* (略...)
+
 
 ## 複習其他 input 類型
 
@@ -73,13 +84,45 @@ http://www.w3schools.com/jsref/dom_obj_legend.asp
 
 **autocomplete**
 
-### button attr
+### button
+
+**type=submit**
+
+* formaction
+* formmethod
+
+```html
+<form action="demo_form.asp" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <button type="submit">Submit</button>
+  <button type="submit" formmethod="post" formaction="demo_post.asp">Submit using POST</button>
+</form>
+```
+
+http://www.w3schools.com/tags/att_button_formmethod.asp
 
 **formtarget**
 
 form-target
 
 http://www.w3school.com.cn/tags/att_button_formtarget.asp
+
+**form**
+
+* IE 不支援
+
+```html
+<form action="demo_form.asp" method="get" id="form1">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+</form>
+
+<button type="submit" form="form1" value="Submit">Submit</button>
+```
+
+http://www.w3schools.com/tags/att_button_form.asp
+
 
 ### form attr
 
