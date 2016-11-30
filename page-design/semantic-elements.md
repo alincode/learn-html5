@@ -61,7 +61,7 @@ listings, etc.</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_time.asp">&lt;time&gt;</a></td>
-<td>Defines a date/time</td>
+<td>`適合用來表示時間`</td>
 </tr>
 </tbody></table>
 
@@ -80,6 +80,11 @@ listings, etc.</td>
 
 *題庫解析*：2-38
 
+### `footer`
+
+* 一個網頁中，可以有多個 `<footer>`
+* 適合用來表示版權資訊
+* 適用用來表示相關的文章連結資訊
 
 ### figure
 
@@ -121,15 +126,6 @@ http://www.w3schools.com/TAgs/tag_figcaption.asp
 ### nav
 
 *題庫解析*：2-41
-
-### footer
-
-* 一個網頁中，可以有多個 `<footer>`
-* 適合用來表示版權資訊
-* 適用用來表示相關的文章連結資訊
-
-*題庫解析*：2-42
-
 
 ### 延伸閱讀
 * http://www.w3schools.com/html/html5_semantic_elements.asp

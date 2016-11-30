@@ -1,4 +1,4 @@
-# Selector
+# Selector 選擇器
 
 ```html
 <footer id="layout-footer" class="myclass">
@@ -33,11 +33,39 @@ footer {...}
 **child 子選擇器**
 
 ```
-footer address {...}
+footer > address {...}
 ```
 
 **descendant 後代選擇器**
 
 ```
 footer address {...}
+```
+
+**attr 屬性**
+
+```
+:invalid {
+  background-color: grey;
+}
+```
+
+### 常見`錯誤`的使用
+
+**錯誤一**
+
+```
+footer + address {...}
+```
+
+**錯誤二**
+
+```
+footer >> address {...}
+```
+
+**錯誤三**
+
+```
+footer ~ address {...}
 ```

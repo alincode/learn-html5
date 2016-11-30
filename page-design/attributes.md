@@ -159,4 +159,8 @@ not</td>
 </tbody></table>
 
 
-*題庫解析*：2-02, 2-04, 2-06, 2-15
+**範例**
+
+```html
+<p hidden>This paragraph should be hidden.</p>
+```

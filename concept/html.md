@@ -24,11 +24,3 @@ The content of the document......
 </body>
 </html>
 ```
-
-### metedata
-
-*題庫解析*：1-37
-
-### 補充
-
-* [CNN News](http://edition.cnn.com/)

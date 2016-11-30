@@ -5,65 +5,17 @@
 * Defines a video
 * 是 Media Element
 * 是嵌入是內容（embedded content)
-* IE 要到 9.0 版本才支援
+* IE9 支援
 * tips：The autoplay attribute does not work in mobile devices like iPad and iPhone.
+
+**HTML5 支援的`編碼`**
+
+* H.265
+* VP8
 
 **範例**
 
 ```html
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-```
-
-**瀏覽器支援度**
-
-In HTML5, there are 3 supported video formats: MP4, WebM, and Ogg.
-
-<table>
-<tbody><tr>
-<th style="width:25%">Browser</th>
-<th style="width:25%">MP4</th>
-<th style="width:25%">WebM</th>
-<th style="width:25%">Ogg</th>
-</tr>
-<tr>
-<td>Internet Explorer</td>
-<td>YES</td>
-<td>NO</td>
-<td>NO</td>
-</tr>
-<tr>
-<td>Chrome</td>
-<td>YES</td>
-<td>YES</td>
-<td>YES</td>
-</tr>
-<tr>
-<td>Firefox</td>
-<td>YES</td>
-<td>YES</td>
-<td>YES</td>
-</tr>
-<tr>
-<td>Safari</td>
-<td>YES</td>
-<td>NO</td>
-<td>NO</td>
-</tr>
-<tr>
-<td>Opera</td>
-<td>YES (from Opera 25)</td>
-<td>YES</td>
-<td>YES</td>
-</tr>
-</tbody></table>
-
-**範例**
-
-```
 <video width="320" height="240" autoplay>
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
@@ -71,12 +23,14 @@ Your browser does not support the video tag.
 </video>
 ```
 
-**資料來源**
+**延伸閱讀**
 
-http://www.w3schools.com/html/html5_video.asp
-http://www.w3schools.com/jsref/dom_obj_video.asp
-http://www.w3schools.com/tags/ref_av_dom.asp
-http://www.w3schools.com/tags/tag_video.asp
+* http://www.w3schools.com/html/html5_video.asp
+* http://www.w3schools.com/jsref/dom_obj_video.asp
+* http://www.w3schools.com/tags/ref_av_dom.asp
+* http://www.w3schools.com/tags/tag_video.asp
+
+## 屬性
 
 ### controls
 
@@ -222,6 +176,18 @@ http://www.w3schools.com/TagS/av_met_canplaytype.asp
 
 ## Video Dom Properties
 
+### videoHeight, videoWidth
+
+* 屬於`立即可用` (interactive content)
+
+```
+<video id="foo" src="foo.mp4"></video>
+
+var vid = document.getElementById("foo");
+vid.videoHeight; // returns the intrinsic height of the video
+vid.videoWidth; // returns the intrinsic width of the video
+```
+
 ### defaultPlaybackRate
 
 設定播放速度
@@ -233,7 +199,7 @@ vid.defaultPlaybackRate = 0.5;
 
 http://www.w3schools.com/TagS/av_prop_defaultplaybackrate.asp
 
-## DOM error Property
+## Video DOM `error property`
 
 * 1 = MEDIA_ERR_ABORTED - fetching process aborted by user
 * 2 = MEDIA_ERR_NETWORK - error occurred when downloading
@@ -241,4 +207,46 @@ http://www.w3schools.com/TagS/av_prop_defaultplaybackrate.asp
 * 4 = MEDIA_ERR_SRC_NOT_SUPPORTED - audio/video not supported
 
 *題庫解析*：4-42
+
+## 瀏覽器影片格式支援度
+
+<table>
+<tbody><tr>
+<th style="width:25%">Browser</th>
+<th style="width:25%">MP4</th>
+<th style="width:25%">WebM</th>
+<th style="width:25%">Ogg</th>
+</tr>
+<tr>
+<td>Internet Explorer</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>YES (from Opera 25)</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+</tbody></table>
+
 
