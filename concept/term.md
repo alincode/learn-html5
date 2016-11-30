@@ -2,6 +2,7 @@
 
 * 元素 element 或 標籤 tag
 * 屬性 attribute 或 特性 properties
+* 參數 attribute-value
 * 事件 event
 
 `<element attribute="attribute-value">`

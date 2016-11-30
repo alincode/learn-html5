@@ -1,34 +1,28 @@
 # 整合應用
 
-### Web Storage
+### 網頁之間互相傳遞及接收資料
 
-local Storage
+**發送**
 
-### Navigator
+`window.postMessage`
 
-### Geolocation
+**接收事件**
 
-### text-cache-manifest
+`window.onmessage`
 
-### Manifest
+**取得內容**
 
-### offline web application / event
-
-### Web Workers / Shared Worker 多執行緒應用
-
-### Drag and Drop
-
-### Indexed Database
-
-### Cross-documents Messageing
-
-### MIME text/event-stream
-
-### Web Socket
-
-### File API
+`event.data`
 
 ### History
 
+**方法**
+
+* pushState()
+* replaceState()
+
+會觸發事件
+
+* onpopstate
 
 
