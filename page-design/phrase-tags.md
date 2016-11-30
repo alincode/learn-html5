@@ -27,8 +27,8 @@
   </tr>
   <tr>
     <td>&lt;var&gt;</td>
-    <td>變數</td>
+    <td>`變數`</td>
   </tr>
   </tbody></table>
 
-*題庫解析*：2-01, 2-25, 2-26, 2-27
+[demo](http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_test)

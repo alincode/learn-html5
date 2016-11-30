@@ -1,4 +1,4 @@
-# 語意元素 in HTML5
+    +++++++++++++++# 語意元素 in HTML5
 
 *解析題庫*：1-31
 
@@ -45,7 +45,7 @@ listings, etc.</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_mark.asp">&lt;mark&gt;</a></td>
-<td>Defines marked/highlighted text</td>
+<td>`文字中要突顯的部分`</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_nav.asp">&lt;nav&gt;</a></td>

@@ -141,7 +141,7 @@ user right-clicks on the element </td>
 </tr>
 <tr>
 <td class="html5badge">dropzone</a></td>
-<td>拖放區域</td>
+<td>`拖放區域`</td>
 </tr>
 <tr>
 <td class="html5badge">hidden</a></td>

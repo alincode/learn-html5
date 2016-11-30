@@ -8,7 +8,7 @@
 * meter
 * video
 
-### ruby, rt
+### `ruby, rt`
 
 在文字旁邊表示注音
 
@@ -25,6 +25,22 @@
 http://www.w3schools.com/tags/tag_ruby.asp
 
 ## HTML4 就有的
+
+### `pre`
+
+```html
+<pre>
+    <code>多行程式碼</code>
+</pre>
+```
+
+### `html`
+
+宣告 HTML 文件使用的語言
+
+`<html lang="en">`
+
+http://www.w3schools.com/TAgs/tag_html.asp
 
 ### `legend`
 
@@ -80,9 +96,13 @@ http://www.w3schools.com/TAgs/att_img_usemap.asp
 * 超連結
 * media: 定義超連結對象是要針對哪一種類型的設備使用
 
+```html
+<a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)">
+    Open media attribute page for print.
+</a>
 ```
-<a media=""/>
-```
+
+http://www.w3schools.com/tags/att_media.asp
 
 ### wbr
 
@@ -118,17 +138,7 @@ http://www.w3schools.com/TAgs/tag_del.asp
 
 ### abbr
 
-*題庫解析*：2-10
-
-### pre
-
-*題庫解析*：2-12
-
-```html
-<pre>
-    <code>多行程式碼</code>
-</pre>
-```
+* 縮寫
 
 ### ins
 
@@ -138,12 +148,6 @@ http://www.w3schools.com/TAgs/tag_del.asp
 <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
 Try it Yourself »
 ```
-
-### html
-
-`<html lang>`
-
-http://www.w3schools.com/TAgs/tag_html.asp
 
 ### small
 
@@ -178,17 +182,10 @@ http://www.w3schools.com/TAgs/tag_html.asp
 
 *題庫解析*：2-24, 2-37
 
-### mark
-
-* 文字中要突顯的部分
-
-*題庫解析*：2-30
-
 ### blockquote
 
 * 引用了別人文章裡面的一段內容
 
-*題庫解析*：2-31
 
 ### bdo
 
@@ -257,7 +254,3 @@ http://www.w3schools.com/jsref/dom_obj_keygen.asp
 <sub> - Subscript text
 <sup> - Superscript text
 ```
-
-*題庫解析*：2-18
-
-

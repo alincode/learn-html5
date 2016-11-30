@@ -2,6 +2,7 @@
 
 * 採用物件導向程式語言
 * 為直譯是程式語言
+* `不包含修正資料`
 
 ### 注意事項
 
@@ -215,19 +216,10 @@ MIME_type
 
 ### 迴圈(for loop)
 
-*解析題庫*：1-10
-
-**1-39**
-
-
-Different Kinds of Loops
-JavaScript supports different kinds of loops:
-
-* for - loops through a block of code a number of times
+* for
 * for/in - loops through the properties of an object
-* while - loops through a block of code while a specified condition is true
-* do/while - also loops through a block of code while a specified condition is true
-
+* while
+* do/while
 
 http://www.w3schools.com/js/js_loop_for.asp
 
@@ -238,7 +230,7 @@ http://www.w3schools.com/js/js_loop_for.asp
 * shift()
 * push()
 * reverse()
-* sort()
+* `sort()`
 
 ```js
 console.log('=== origin array ===\n', ["Banana", "Orange", "Apple", "Mango"]);
