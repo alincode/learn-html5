@@ -23,7 +23,7 @@
   </tr>
   <tr>
     <td>&lt;kbd&gt;</td>
-    <td>使用者透過鍵盤輸入的值</td>
+    <td>`使用者透過鍵盤輸入的值`(keyboard input)</td>
   </tr>
   <tr>
     <td>&lt;var&gt;</td>

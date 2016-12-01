@@ -25,7 +25,7 @@ socket = new WebSocket("wa://localhost:12345");
 * open
 * connecting
 
-### 事件
+### event 事件
 
 **onopen**
 

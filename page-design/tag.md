@@ -61,6 +61,19 @@ http://www.w3schools.com/jsref/dom_obj_legend.asp
 
 ### img
 
+**`title`**
+
+* `使用滑鼠移到圖片上時，會顯示說明。`
+* [demo](http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_test)
+
+*題庫解析*：2-45
+
+**alt**
+
+* 圖片無法讀取時的替代文字
+
+*題庫解析*：2-33
+
 **usemap**
 
 與 `<map>` 配合，設定圖片上不同的超連結區域。
@@ -79,22 +92,10 @@ http://www.w3schools.com/jsref/dom_obj_legend.asp
 
 http://www.w3schools.com/TAgs/att_img_usemap.asp
 
-**title**
-
-* `使用滑鼠移到圖片上時，會顯示說明。`
-
-*題庫解析*：2-45
-
-**alt**
-
-* 圖片無法讀取時的替代文字
-
-*題庫解析*：2-33
-
 ### a
 
 * 超連結
-* media: 定義超連結對象是要針對哪一種類型的設備使用
+* `media: 定義超連結對象是要針對哪一種類型的設備使用`
 
 ```html
 <a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)">

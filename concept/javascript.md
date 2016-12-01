@@ -81,6 +81,15 @@ console.log(test); // 102
 
 **宣告**
 
+方法一：
+```js
+var family = new Array();
+family.push('mother');
+family.push('father');
+family.push('sister');
+```
+
+方法二：
 ```js
 var family = ['mother', 'father', 'sister'];
 

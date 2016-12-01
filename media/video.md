@@ -10,8 +10,13 @@
 
 **HTML5 支援的`編碼`**
 
-* H.265
-* VP8
+* `H.264` (MPEG4格式) - 具有最高壓縮率和支援高畫質影像，
+因在MPEG國際標準組織內具有專利，必須支付費用，
+但在HTML5網頁標準下播放影片時，可以免費使用。
+* `Ogg Theora` (Ogg格式) - 不需支付費用而被公開的解碼器。
+* `VP8` (WebM格式) - 是開放程式碼的解碼器，
+也是Google所使用的解碼器。
+
 
 **範例**
 
@@ -174,11 +179,12 @@ isSupp = vid.canPlayType(vidType+';codecs="'+codType+'"');
 
 http://www.w3schools.com/TagS/av_met_canplaytype.asp
 
-## Video Dom Properties
+## Video Dom Properties 屬性
 
 ### videoHeight, videoWidth
 
 * 屬於`立即可用` (interactive content)
+* interactive content == read only
 
 ```
 <video id="foo" src="foo.mp4"></video>
@@ -187,6 +193,8 @@ var vid = document.getElementById("foo");
 vid.videoHeight; // returns the intrinsic height of the video
 vid.videoWidth; // returns the intrinsic width of the video
 ```
+
+https://developer.mozilla.org/zh-TW/docs/Web/API/HTMLVideoElement
 
 ### defaultPlaybackRate
 

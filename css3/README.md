@@ -2,7 +2,7 @@
 
 * `不被 IE9 支援`
 
-### CSS3 新增的語法
+### `CSS3 新增的邊框`
 
 * border-image  圖片邊框
 * border-radius 圓角邊框
@@ -13,6 +13,19 @@
 
 * 定義特定標籤格式
 * 使網站上的每一個網站編排達到一致性
+
+### `overflow`
+
+用來定義元素超過某個範圍的時候該如何呈現，例如圖片超過預設區域的大小、文字長度超出原本的範圍等
+
+**CSS overflow 常見的值**
+
+* overflow: auto;　// 預設會自動使用捲軸
+* overflow:visible;　 // 顯示的文字或圖片會直接超出範圍，不使用捲軸。
+* overflow:hidden;　// 自動隱藏超出的文字或圖片。
+* overflow:scroll;　// 自動產生捲軸。
+* overflow:inherit;　// 繼承自父元素的可見性
+
 
 ### background-position
 
@@ -30,7 +43,7 @@ background-position: 100% 100%;
 background-image: url(A.gif), url(B.gif);
 ```
 
-### text-indent
+### `text-indent`
 
 將指定文字元素第一行空下 50px
 
@@ -59,19 +72,6 @@ p {
 * none
 * both
 * vertical
-
-### overflow
-
-用來定義元素超過某個範圍的時候該如何呈現，例如圖片超過預設區域的大小、文字長度超出原本的範圍等
-
-**CSS overflow 常見的值**
-
-* overflow: auto;　// 預設會自動使用捲軸
-* overflow:visible;　 // 顯示的文字或圖片會直接超出範圍，不使用捲軸。
-* overflow:hidden;　// 自動隱藏超出的文字或圖片。
-* overflow:scroll;　// 自動產生捲軸。
-* overflow:inherit;　// 繼承自父元素的可見性
-
 
 ** 延伸閱讀**
 * [CSS overflow 屬性用法 - Wibibi 網頁設計教學百科](http://www.wibibi.com/info.php?tid=157)
