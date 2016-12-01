@@ -6,7 +6,6 @@
 * rotate 旋轉
 * matrix 矩陣
 
-
 ### 2D
 
 * matrix
@@ -23,13 +22,13 @@
 **Transform Methods**
 
 * matrix(n,n,n,n,n,n): using a matrix of six values
-* translate(x,y)
+* `translate(x,y)`
 * translateX(n)
 * translateY(n)
 * scale(x,y)
 * scaleX(n)
 * scaleY(n)
-* rotate(angle)
+* `rotate(angle)`
 * skew(x-angle,y-angle)
 * skewX(angle)
 * skewY(angle)
@@ -143,4 +142,3 @@ div {
     <td>23.0<br>15.0&nbsp;-webkit-</td>
     </tr>
 </tbody></table>
-
