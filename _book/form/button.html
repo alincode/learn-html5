@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>button | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../versus/README.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../form/form.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -334,7 +334,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="form/button.html">
+        <li class="chapter active" data-level="4.3" data-path="form/button.html">
             
                 
                     <a href="../form/button.html">
@@ -969,22 +969,43 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4913">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="button">button</h1>
+<p><a href="http://www.w3schools.com/tags/tag_button.asp" target="_blank">http://www.w3schools.com/tags/tag_button.asp</a></p>
+<p><strong>type <code>種類</code></strong></p>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li>submit</li>
+<li>button</li>
+<li>reset</li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+<h3 id="type">type</h3>
+<p><strong>submit</strong></p>
 <ul>
-<li>DOM - Document Object Model</li>
+<li>formaction: e.g. demo_post.asp</li>
+<li>formmethod: e.g. post</li>
 </ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"demo_form.asp"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span>
+  First name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fname"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  Last name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"lname"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">formmethod</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">formaction</span>=<span class="hljs-value">"demo_post.asp"</span>&gt;</span>Submit using POST<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<ul>
+<li><code>formenctype</code>: e.g. multipart/form-data</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"demo_form.asp"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span>
+  First name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fname"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  Last name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"lname"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">formenctype</span>=<span class="hljs-value">"multipart/form-data"</span>&gt;</span>Submit using POST<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<p><a href="http://www.w3schools.com/tags/att_button_formmethod.asp" target="_blank">http://www.w3schools.com/tags/att_button_formmethod.asp</a></p>
+<h3 id="formtarget">formtarget</h3>
+<p>form-target</p>
+<p><a href="http://www.w3school.com.cn/tags/att_button_formtarget.asp" target="_blank">http://www.w3school.com.cn/tags/att_button_formtarget.asp</a></p>
 
                     
                     </section>
@@ -995,10 +1016,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../form/form.html" class="navigation navigation-prev " aria-label="Previous page: form"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../versus/README.html" class="navigation navigation-next " aria-label="Next page: 比較"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

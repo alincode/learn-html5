@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>漸變效果 | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../effect/marguee.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../effect/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="8.1" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -614,7 +614,7 @@
                 
     
         
-        <li class="chapter " data-level="8.1" data-path="effect/gradient.html">
+        <li class="chapter active" data-level="8.1" data-path="effect/gradient.html">
             
                 
                     <a href="../effect/gradient.html">
@@ -969,21 +969,52 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4893">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="gradient-">Gradient 漸變效果</h1>
+<h2 id="linear-gradient">linear-gradient</h2>
+<h3 id="">語法</h3>
+<p><strong>新的語法</strong></p>
+<pre><code>linear-gradient(
+  [ &lt;angle&gt; | to &lt;side-or-corner&gt; ,]? &lt;color-stop&gt; [, &lt;color-stop&gt;]+ )
+</code></pre><p><strong>舊的語法</strong></p>
+<pre><code>-moz-linear-gradient([ [ [top | bottom] || [left | right] ],]? &lt;color-stop&gt;[, &lt;color-stop&gt;]+);
+</code></pre><pre><code>linear-gradient(direction, color-stop1, color-stop2, ...);
+</code></pre><h3 id="">範例</h3>
+<p><strong>Linear Gradient - Top to Bottom 範例</strong></p>
+<p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear" target="_blank">demo</a></p>
+<pre><code class="lang-css"><span class="hljs-id">#grad</span> <span class="hljs-rules">{
+     <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(red, yellow)</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p><strong>Linear Gradient - Left to Right 範例</strong></p>
+<p><a href="http://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear_ltr" target="_blank">demo</a></p>
+<pre><code class="lang-css"><span class="hljs-id">#grad</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">200px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(to right, red , yellow)</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-id">#grad</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">200px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(<span class="hljs-number">123deg</span>, red , yellow)</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p><strong>題庫 6-27</strong></p>
+<pre><code class="lang-css"><span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">200px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule">// <span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">-moz-linear-gradient</span>(top, white, black)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(to bottom, white, black)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">translate</span>(<span class="hljs-number">100px</span>, <span class="hljs-number">100px</span>) <span class="hljs-function">rotate</span>(<span class="hljs-number">30deg</span>)
+</span></span></span>}
+</code></pre>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li><a href="http://codepen.io/alincode/pen/bBYPyZ" target="_blank">demo</a></li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+<h3 id="">延伸閱讀</h3>
 <ul>
-<li>DOM - Document Object Model</li>
+<li><a href="http://www.w3schools.com/css/css3_gradients.asp" target="_blank">css3 gradients - w3schools  </a></li>
+<li><a href="http://blog.yam.com/hanasan/article/66887138" target="_blank">CSS3 漸層背景 (background linear gradient) 實作練習 - Yijen&#39;s blog</a></li>
 </ul>
 
                     
@@ -995,10 +1026,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../effect/README.html" class="navigation navigation-prev " aria-label="Previous page: 動態效果"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../effect/marguee.html" class="navigation navigation-next " aria-label="Next page: 跑馬燈"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

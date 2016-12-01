@@ -25,12 +25,11 @@ div {
 
 ### box-sizing
 
-指定元素放入某個區域的方式
+* 指定元素放入某個區域的方式
+* [demo](http://codepen.io/alincode/pen/vyWomV)
 
-### box type
+http://www.w3schools.com/cssref/css3_pr_box-sizing.asp
 
-**border-box**
+**語法**
 
-**padding-box**
-
-**content-box**
+`box-sizing: content-box|border-box|initial|inherit;`

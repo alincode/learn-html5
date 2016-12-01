@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>input | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../form/form.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../form/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="4.1" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -302,7 +302,7 @@
                 
     
         
-        <li class="chapter " data-level="4.1" data-path="form/input.html">
+        <li class="chapter active" data-level="4.1" data-path="form/input.html">
             
                 
                     <a href="../form/input.html">
@@ -969,22 +969,61 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4915">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="input">input</h1>
+<p><strong>檢查資料格式</strong></p>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li>url</li>
+<li><code>email</code><ul>
+<li><a href="http://codepen.io/alincode/pen/LbOJYO" target="_blank">email invalid</a></li>
+<li><a href="http://codepen.io/alincode/pen/gLXdaZ" target="_blank">email invalid and disabled</a></li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+</li>
+</ul>
+<p><strong>不檢查資料格式</strong></p>
 <ul>
-<li>DOM - Document Object Model</li>
+<li>tel</li>
+<li>(略...)</li>
 </ul>
+<h2 id="html5">HTML5新增的</h2>
+<ul>
+<li><code>color</code></li>
+<li>date</li>
+<li>datetime</li>
+<li>datetime-local</li>
+<li><code>email</code></li>
+<li>month</li>
+<li>number</li>
+<li><code>range</code></li>
+<li>search</li>
+<li>tel (The tel type is currently supported only in Safari 8.)</li>
+<li>time</li>
+<li>url(not supported in IE9 and earlier versions.)</li>
+<li>week</li>
+</ul>
+<h2 id="html4-">HTML4 就有的</h2>
+<ul>
+<li>file</li>
+</ul>
+<p><code>&lt;input type=&quot;file&quot; name=&quot;upfile[]&quot;/&gt;</code></p>
+<ul>
+<li>text</li>
+</ul>
+<h2 id="">屬性</h2>
+<p><strong>autocomplete</strong></p>
+<p><strong>form</strong></p>
+<ul>
+<li>IE 不支援</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"demo_form.asp"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"form1"</span>&gt;</span>
+  First name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fname"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+  Last name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"lname"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">form</span>=<span class="hljs-value">"form1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p><a href="http://www.w3schools.com/tags/att_button_form.asp" target="_blank">http://www.w3schools.com/tags/att_button_form.asp</a></p>
 
                     
                     </section>
@@ -995,10 +1034,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../form/README.html" class="navigation navigation-prev " aria-label="Previous page: 表單設計"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../form/form.html" class="navigation navigation-next " aria-label="Next page: form"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

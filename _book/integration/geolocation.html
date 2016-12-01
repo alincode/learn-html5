@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>地理定位 | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../integration/offline-web-application.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../integration/web-storage.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="9.2" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -716,7 +716,7 @@
         </li>
     
         
-        <li class="chapter " data-level="9.2" data-path="integration/geolocation.html">
+        <li class="chapter active" data-level="9.2" data-path="integration/geolocation.html">
             
                 
                     <a href="../integration/geolocation.html">
@@ -969,21 +969,101 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4919">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="geolocation">Geolocation</h1>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li>精準度會因為你的裝置而有所不同</li>
+<li>可以取得個人所在位置的資料</li>
+<li>可以透過 IP 來計算你的所在位置</li>
+<li>成功取得使用者的地理位置後，會回傳 Position 物件</li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+<p><strong>判斷是否支援</strong></p>
+<pre><code>navigator.geolocation // 因為 window 是全域變數，可以被省略
+window.navigator.geolocation
+</code></pre><p><strong>watch</strong></p>
 <ul>
-<li>DOM - Document Object Model</li>
+<li>可用 watchPosition() 來持續追蹤使用者的地理位置</li>
+<li>可用 clearWatch() 來停止追蹤使用者的位置</li>
+</ul>
+<p><strong>Position 物件的屬性</strong></p>
+<table>
+<tbody>
+<tr>
+    <th style="width:150px">Property</th>
+    <th>Returns</th>
+</tr>
+<tr>
+    <td>coords</td>
+    <td> Coordinates 座標物件, 存放傳回之位置資訊</td>
+</tr>
+<tr>
+    <td>timestamp</td>
+    <td>取得位置資訊之時間 (毫秒)</td>
+</tr>
+</tbody></table>
+
+<p><strong>Coordinates 物件的屬性</strong></p>
+<table>
+<tbody><tr>
+<th style="width:150px">Property</th>
+<th>Returns</th>
+</tr>
+  <tr>
+<td>latitude</td>
+<td>經度</td>
+  </tr>
+  <tr>
+<td>longitude</td>
+<td>緯度</td>
+  </tr>
+  <tr>
+<td>accuracy</td>
+<td>物置誤差</td>
+  </tr>
+  <tr>
+<td>altitude</td>
+<td>高度</td>
+  </tr>
+  <tr>
+<td>altitudeAccuracy</td>
+<td>高度誤差</td>
+  </tr>
+  <tr>
+<td>heading</td>
+<td>移動方向</td>
+  </tr>
+  <tr>
+<td>speed</td>
+<td>移動速度</td>
+  </tr>
+</tbody></table>
+
+<p><strong>Handling Errors</strong></p>
+<p><em>題庫解析*</em>：7-03</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showError</span><span class="hljs-params">(error)</span> </span>{
+    <span class="hljs-keyword">switch</span>(error.code) {
+        <span class="hljs-keyword">case</span> error.PERMISSION_DENIED: <span class="hljs-comment">// 0</span>
+            x.innerHTML = <span class="hljs-string">"User denied the request for Geolocation."</span>
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> error.POSITION_UNAVAILABLE: <span class="hljs-comment">// 1</span>
+            x.innerHTML = <span class="hljs-string">"Location information is unavailable."</span>
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> error.TIMEOUT: <span class="hljs-comment">// 2</span>
+            x.innerHTML = <span class="hljs-string">"The request to get user location timed out."</span>
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> error.UNKNOWN_ERROR: <span class="hljs-comment">// 3</span>
+            x.innerHTML = <span class="hljs-string">"An unknown error occurred."</span>
+            <span class="hljs-keyword">break</span>;
+    }
+}
+</code></pre>
+<p><strong>延伸閱讀</strong></p>
+<ul>
+<li><a href="https://www.w3.org/TR/geolocation-API/" target="_blank">Geolocation API Specification 2nd Edition - W3C</a></li>
+<li><a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank">html5 geolocation</a></li>
+<li><a href="https://dev.w3.org/geo/api/spec-source.html" target="_blank">W3C Geolocation API Specification</a></li>
+<li><a href="http://yhhuang1966.blogspot.tw/2013/10/html5-geolocation-api.html" target="_blank">小狐狸事務所 - HTML5 Geolocation API (地理位置) 測試</a></li>
 </ul>
 
                     
@@ -995,10 +1075,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../integration/web-storage.html" class="navigation navigation-prev " aria-label="Previous page: Web Storage"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../integration/offline-web-application.html" class="navigation navigation-next " aria-label="Next page: 離線網路應用程式"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

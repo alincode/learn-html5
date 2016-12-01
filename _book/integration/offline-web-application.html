@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>離線網路應用程式 | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../integration/web-workers.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../integration/geolocation.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="9.3" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -732,7 +732,7 @@
         </li>
     
         
-        <li class="chapter " data-level="9.3" data-path="integration/offline-web-application.html">
+        <li class="chapter active" data-level="9.3" data-path="integration/offline-web-application.html">
             
                 
                     <a href="../integration/offline-web-application.html">
@@ -969,21 +969,69 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4921">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="offline-web-application-">offline web application (離線網路應用程式)</h1>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li>MIME type: text/cache-manifest</li>
+<li>當 Mainfest 的檔案被修改時，瀏覽器會重新下載儲存的檔案。</li>
+<li><a href="https://www.html5rocks.com/zh/tutorials/appcache/beginner/" target="_blank">应用缓存初级使用指南 - html5rocks   </a></li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+<h3 id="manifest">Manifest</h3>
 <ul>
-<li>DOM - Document Object Model</li>
+<li>註解方式，用 <code>#</code></li>
+</ul>
+<p><strong>分成三個部分</strong></p>
+<ul>
+<li>CACHE</li>
+<li>NETWORK：不要被 cache</li>
+<li>FALLBACK</li>
+</ul>
+<p><strong>範例</strong></p>
+<pre><code class="lang-h">CACHE MANIFEST
+<span class="hljs-preprocessor"># 2010-06-18:v2</span>
+
+<span class="hljs-preprocessor"># Explicitly cached 'master entries'.</span>
+CACHE:
+/favicon.ico
+index.html
+stylesheet.css
+images/logo.png
+scripts/main.js
+
+<span class="hljs-preprocessor"># Resources that require the user to be online.</span>
+NETWORK:
+login.php
+/myapi
+http:<span class="hljs-comment">//api.twitter.com</span>
+
+<span class="hljs-preprocessor"># static.html will be served <span class="hljs-keyword">if</span> main.py is inaccessible</span>
+<span class="hljs-preprocessor"># offline.jpg will be served in place of all images in images/large/</span>
+<span class="hljs-preprocessor"># offline.html will be served in place of all other .html files</span>
+FALLBACK:
+/main.py /<span class="hljs-keyword">static</span>.html
+images/large/ images/offline.jpg
+*.html /offline.html
+</code></pre>
+<p><a href="http://www.w3schools.com/html/html5_app_cache.asp" target="_blank">http://www.w3schools.com/html/html5_app_cache.asp</a></p>
+<h3 id="cache-event-"><code>cache event</code> (事件)</h3>
+<p><strong>更新檔案過程中會觸發的事件</strong></p>
+<ul>
+<li>checking</li>
+<li>downloading</li>
+<li>cached</li>
+</ul>
+<p><strong>發現沒有需要更新的檔案時，會觸發的事件</strong></p>
+<ul>
+<li>obsolete</li>
+</ul>
+<p><strong>檢查檔案是否要更新時，如果發現沒有 Manifest 檔，會觸發的事件</strong></p>
+<ul>
+<li>error</li>
+</ul>
+<p><strong>發現需要重新下載新的檔案時，會觸發的事件</strong></p>
+<ul>
+<li>updateready</li>
 </ul>
 
                     
@@ -995,10 +1043,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../integration/geolocation.html" class="navigation navigation-prev " aria-label="Previous page: 地理定位"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../integration/web-workers.html" class="navigation navigation-next " aria-label="Next page: Web Workers"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

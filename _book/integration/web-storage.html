@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>Web Storage | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../integration/geolocation.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../integration/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="9.1" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -700,7 +700,7 @@
                 
     
         
-        <li class="chapter " data-level="9.1" data-path="integration/web-storage.html">
+        <li class="chapter active" data-level="9.1" data-path="integration/web-storage.html">
             
                 
                     <a href="../integration/web-storage.html">
@@ -969,22 +969,41 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4924">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="-web-storage">儲存 (Web Storage)</h1>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li>以 key-value 的型式來儲存資料</li>
+<li>建議每個網站儲存的大小為 5MB</li>
+<li>localStorage 跟 sessionStorage 使用方式一樣，只要替換物件名稱就可以了。</li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+<p><strong>local storage object 有兩種</strong></p>
 <ul>
-<li>DOM - Document Object Model</li>
+<li>window.localStorage - 存在本地端，不會過期。</li>
+<li>window.sessionStorage - 存在本地端，只要瀏覽器關閉就失效。</li>
 </ul>
+<p><strong>設定值</strong></p>
+<pre><code class="lang-js">localStorage.setItem(<span class="hljs-string">"lastname"</span>, <span class="hljs-string">"Smith"</span>);
+<span class="hljs-comment">// or</span>
+localStorage.lastname = <span class="hljs-string">"Smith"</span>;
+<span class="hljs-comment">// or</span>
+localStorage[<span class="hljs-string">"lastname"</span>] = <span class="hljs-string">"Smith"</span>;
+</code></pre>
+<p><strong>取得值</strong></p>
+<pre><code class="lang-js">localStorage.getItem(<span class="hljs-string">"lastname"</span>);
+<span class="hljs-comment">// or</span>
+localStorage.lastname;
+</code></pre>
+<p><strong>刪除值</strong></p>
+<pre><code class="lang-js">localStorage.removeItem(<span class="hljs-string">"lastname"</span>);
+</code></pre>
+<p><strong>判斷支不支援 Storage</strong></p>
+<pre><code>if (typeof(Storage) !== &quot;undefined&quot;) {
+    // Code for localStorage/sessionStorage.
+} else {
+    // Sorry! No Web Storage support..
+}
+</code></pre><p><a href="http://www.w3schools.com/html/html5_webstorage.asp" target="_blank">http://www.w3schools.com/html/html5_webstorage.asp</a></p>
 
                     
                     </section>
@@ -995,10 +1014,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../integration/README.html" class="navigation navigation-prev " aria-label="Previous page: 整合應用"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../integration/geolocation.html" class="navigation navigation-next " aria-label="Next page: 地理定位"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

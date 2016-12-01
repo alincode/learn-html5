@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>名詞定義 | HTML5</title>
+        <title>Web Workers | HTML5</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../concept/html.html" />
+    <link rel="next" href="../integration/drag-and-drop.html" />
     
     
-    <link rel="prev" href="../concept/README.html" />
+    <link rel="prev" href="../integration/offline-web-application.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1480570570440">
+    <div class="book"  data-level="9.4" data-basepath=".." data-revision="1480570570440">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="concept/term.html">
+        <li class="chapter " data-level="2.1" data-path="concept/term.html">
             
                 
                     <a href="../concept/term.html">
@@ -748,7 +748,7 @@
         </li>
     
         
-        <li class="chapter " data-level="9.4" data-path="integration/web-workers.html">
+        <li class="chapter active" data-level="9.4" data-path="integration/web-workers.html">
             
                 
                     <a href="../integration/web-workers.html">
@@ -969,21 +969,73 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4902">
+                    <section class="normal" id="section-gitbook_4925">
                     
-                        <h1 id="">名詞定義</h1>
+                        <h1 id="web-workers-">Web Workers (執行緒應用)</h1>
 <ul>
-<li>元素 element 或 標籤 tag</li>
-<li>屬性 attribute 或 特性 properties</li>
-<li>參數 attribute-value</li>
-<li>事件 event</li>
+<li>new Workers()</li>
+<li>new Shared Worker()</li>
+<li>可以使用 navigator 物件</li>
+<li>可以使用 XMLHttpRequest 物件</li>
+<li>可以使用 WebSockets</li>
+<li>此技術使得 Javascript 可以單獨被執行。</li>
 </ul>
-<p><code>&lt;element attribute=&quot;attribute-value&quot;&gt;</code></p>
-<p><strong>範例</strong></p>
-<p><code>&lt;div class=&quot;nickname&quot; onclick=&quot;&quot;&gt;alincode&lt;/div&gt;</code></p>
-<h3 id="">縮寫</h3>
+<p><strong>在 Web Worker 中，從網頁呼叫 Share Worker 會觸發</strong></p>
 <ul>
-<li>DOM - Document Object Model</li>
+<li>onconnect</li>
+</ul>
+<h3 id="">範例</h3>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Count numbers: <span class="hljs-tag">&lt;<span class="hljs-title">output</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"result"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">output</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">"startWorker()"</span>&gt;</span>Start Worker<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">"stopWorker()"</span>&gt;</span>Stop Worker<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Note:<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Internet Explorer 9 and earlier versions do not support Web Workers.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> w;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">startWorker</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span>(Worker) !== <span class="hljs-string">"undefined"</span>) {
+        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span>(w) == <span class="hljs-string">"undefined"</span>) {
+            w = <span class="hljs-keyword">new</span> Worker(<span class="hljs-string">"demo_workers.js"</span>);
+        }
+        w.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(event)</span> </span>{
+            <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"result"</span>).innerHTML = event.data;
+        };
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"result"</span>).innerHTML = <span class="hljs-string">"Sorry, your browser does not support Web Workers..."</span>;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopWorker</span><span class="hljs-params">()</span> </span>{
+    w.terminate();  <span class="hljs-comment">// 停止執行緒</span>
+    w = <span class="hljs-literal">undefined</span>;
+}
+</code></pre>
+<p><strong> Web Worker File</strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">// demo_workers.js</span>
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timedCount</span><span class="hljs-params">()</span> </span>{
+    i = i + <span class="hljs-number">1</span>;
+    postMessage(i); <span class="hljs-comment">// 發送訊息</span>
+    setTimeout(<span class="hljs-string">"timedCount()"</span>,<span class="hljs-number">500</span>);
+}
+
+timedCount();
+</code></pre>
+<p>The important part of the code above is the postMessage() method - which is used to post a message back to the HTML page.</p>
+<p>Note: Normally web workers are not used for such simple scripts, but for more CPU intensive tasks.</p>
+<h3 id="">延伸閱讀</h3>
+<ul>
+<li><a href="http://www.w3schools.com/html/html5_webworkers.asp" target="_blank">w3schools - html5 worker</a></li>
+<li><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webworker" target="_blank">w3schools - example</a></li>
 </ul>
 
                     
@@ -995,10 +1047,10 @@
         </div>
 
         
-        <a href="../concept/README.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        <a href="../integration/offline-web-application.html" class="navigation navigation-prev " aria-label="Previous page: 離線網路應用程式"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../concept/html.html" class="navigation navigation-next " aria-label="Next page: HTML"><i class="fa fa-angle-right"></i></a>
+        <a href="../integration/drag-and-drop.html" class="navigation navigation-next " aria-label="Next page: 拖放"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
