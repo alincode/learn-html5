@@ -32,6 +32,7 @@ console.log(x === 3);   // true
 **範例二**
 
 ```js
+console.log('0 * 3 == 0'); // true
 console.log('0 % 3 == 0'); // true
 ```
 
