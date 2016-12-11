@@ -1,5 +1,11 @@
 # CSS
 
+### Box model
+
+* padding, 留白
+* border, 邊框
+* margin, 邊界
+
 ### Elements level
 
 * Block-level Elements
@@ -29,8 +35,6 @@ li {
 ```
 
 http://www.w3schools.com/css/css_display_visibility.asp
-
-* Cascading Style Sheets
 
 ### 撰寫位置
 
@@ -73,26 +77,17 @@ http://www.w3schools.com/css/css_display_visibility.asp
 
 ### 優先權 (Cascading Order)
 
+* Inline stylesheet
+* Embedded stylesheet
+* Imported stylesheet
+* Linked stylesheet
+* Browser's own stylesheet
+
 *解析題庫*：1-35
-
-What style will be used when there is more than one style specified for an HTML element?
-
-Generally speaking we can say that all the styles will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
-
-* Inline style (inside an HTML element)
-* External and internal style sheets (in the head section)
-* Browser default
-
-
-So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.
-
-id, class
 
 **Multiple Style Sheets**
 
 [DEMO](http://www.w3schools.com/css/tryit.asp?filename=trycss_howto_multiple)
-
-
 
 ### CSS Transition Event
 
@@ -102,5 +97,3 @@ https://www.youtube.com/watch?v=m-JY1Yl-ALQ
 **資料來源**
 
 http://www.w3schools.com/css/css_howto.asp
-
-

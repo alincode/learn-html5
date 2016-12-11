@@ -4,12 +4,15 @@
 
 **建立 WebSocket 物件**
 
+* ws：不安全通訊協定
+* wss：安全通訊協定
+
 ```
-socket = new WebSocket("was://localhost:12345");
+socket = new WebSocket("wss://localhost:12345");
+
 // or
-socket = new WebSocket("wa://localhost:12345/socket");
-// or
-socket = new WebSocket("wa://localhost:12345");
+
+socket = new WebSocket("ws://localhost:12345");
 ```
 
 **傳送訊息到伺服器端**
