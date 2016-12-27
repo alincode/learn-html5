@@ -1,8 +1,8 @@
 # CSS3
 
-* `不被 IE9 支援`
+* 不被 IE9 支援
 
-### `CSS3 新增的邊框`
+### CSS3 新增的邊框
 
 * border-image  圖片邊框
 * border-radius 圓角邊框
@@ -55,10 +55,6 @@ p {
 
 * [demo](http://www.w3schools.com/cssref/tryit.asp?filename=trycss_text-indent)
 
-### borders
-
-### 文字樣式
-
 ### CSS3 Multi-Column Layout
 
 ### resize
@@ -73,7 +69,8 @@ p {
 * both
 * vertical
 
-** 延伸閱讀**
+**延伸閱讀**
+
 * [CSS overflow 屬性用法 - Wibibi 網頁設計教學百科](http://www.wibibi.com/info.php?tid=157)
 * http://www.w3schools.com/cssref/pr_pos_overflow.asp
 

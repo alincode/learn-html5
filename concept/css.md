@@ -22,7 +22,7 @@
 
 * Inline Elements
 
-```
+```html
 <span>
 <a>
 <img>

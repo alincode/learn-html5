@@ -24,6 +24,13 @@
 
 http://www.w3schools.com/tags/tag_ruby.asp
 
+### 重新定義 `b`
+
+* 優先採用 `<strong>`、`<em>` 或 `<mark>`，最後才選擇 `<b>`
+* 不要再 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>` 內加入 `<b>`
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+
 ## HTML4 就有的
 
 ### `pre`
