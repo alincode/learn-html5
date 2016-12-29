@@ -43,7 +43,7 @@ listings, etc.</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_mark.asp">&lt;mark&gt;</a></td>
-<td>`文字中要突顯的部分`</td>
+<td>文字中要突顯的部分</td>
 </tr>
 <tr>
 <td><a href="http://www.w3schools.com/tags/tag_nav.asp">&lt;nav&gt;</a></td>

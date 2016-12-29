@@ -1,6 +1,7 @@
 # 屬性
 
-找一些真實網站的範例
+* HTML5 新的全域屬性：contenteditable, contextmenu, draggable, dropzone, hidden, spellcheck。
+* HTML5 新的屬性：ping（用於a與area）, charset（用於meta）, async（用於script）。
 
 ### 易忽略的 HTML4全域屬性 (global attribute)
 

@@ -2,9 +2,9 @@
 
 ### Box model
 
-* padding, 留白
-* border, 邊框
-* margin, 邊界
+* padding (留白)
+* border (邊框)
+* margin (邊界)
 
 ### Elements level
 
