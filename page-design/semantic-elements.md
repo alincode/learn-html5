@@ -1,4 +1,4 @@
-# 語意元素 in HTML5
+# 語意元素
 
 * New tags：新的標籤，像是 `<header>`、`<section>` 等
 * Application tags：也是新的標籤，像是 `<meter>`、`<progress>` 等
@@ -52,4 +52,6 @@ http://www.w3schools.com/TAgs/tag_figcaption.asp
 *題庫解析*：2-11
 
 ### 延伸閱讀
+
 * http://www.w3schools.com/html/html5_semantic_elements.asp
+* [[HTML5]main用法 - IL Night](http://49night.azurewebsites.net/html5-main%E7%94%A8%E6%B3%95/)

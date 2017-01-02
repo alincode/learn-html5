@@ -1,11 +1,8 @@
 # 元素
 
-* element
-* tag
+## HTML5 新增的元素，不包含語意元素
 
-## HTML5 新增的元素
-
-section, video, progress, nav, meter, time, aside, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, mark, output, rp, rt, ruby, source, summary, wbr。
+video, progress, meter, canvas, command, datalist, embed, hgroup, keygen, mark, output, rp, rt, ruby, source, wbr。
 
 input元素的新類型：date, email, url等等。
 
