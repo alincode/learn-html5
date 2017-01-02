@@ -28,3 +28,7 @@ The content of the document......
 ### 鍵盤事件順序
 
 `onkeydown ---> onkeypress ---> onkeyup`
+
+**延伸閱度**
+
+* [wiki HTML元素](https://zh.wikipedia.org/wiki/HTML%E5%85%83%E7%B4%A0)
