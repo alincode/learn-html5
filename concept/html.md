@@ -11,7 +11,7 @@
 
 **HTML5宣告**
 
-* `<DOCTYPE>` 不需要結束標籤
+* `<DOCTYPE>` 定義網頁檔案類型，不需要結束標籤
 
 ```
 <!DOCTYPE HTML>

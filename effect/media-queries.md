@@ -46,4 +46,20 @@
 }
 ```
 
+**範例四**
+
+```css
+body {
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+```
+
 http://www.w3schools.com/css/css3_mediaqueries_ex.asp
+
+* [demo](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_media_example1)
