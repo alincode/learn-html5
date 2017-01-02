@@ -1,5 +1,13 @@
 # CSS3
 
+* Selector：更有彈性的選擇器
+* Webfonts：嵌入式字體
+* Layout：多樣化的排版選擇
+* Stlying radius gradient shadow：圓角、漸層、陰影
+* Border background：邊框的背景支援
+* Transition：元件的移動效果
+* Transform：元件的變形效果
+* Animation：將移動和變形加入動畫支援
 * 不被 IE9 支援
 
 ### CSS3 新增的邊框

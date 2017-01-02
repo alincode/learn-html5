@@ -1,8 +1,10 @@
 # Javascript
 
+* DOM API：更方便的查詢 DOM 元件
+* History API：瀏覽器的上下頁內容修改，方便 AJAX 可以保留瀏覽記錄
 * 採用物件導向程式語言
 * 為直譯是程式語言
-* `不包含修正資料`
+* 不包含修正資料
 
 ### 注意事項
 
@@ -282,6 +284,18 @@ reverse();
 === reverse output ===
  [ 'Mango', 'Apple', 'Orange', 'Banana' ]
 ```
+
+### History
+
+**方法**
+
+* pushState()
+* replaceState()
+
+會觸發事件
+
+* onpopstate
+
 
 **資料來源**
 
