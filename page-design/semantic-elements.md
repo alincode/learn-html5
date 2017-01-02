@@ -25,7 +25,8 @@
 | footer         | 一個網頁中，可以有多個 `<footer>` |
 |                | 適合用來表示版權資訊 |
 |                | 適用用來表示相關的文章連結資訊 |
-| main           |                   |
+| main           | 一個 `<main>` 在一個網頁裡面只能出現 一次 |
+|                | `<main>` 不能被放到 `<article>`、 `<aside>`、 `<footer>`、 `<header>` 、 `<nav>`  裡面。 |
 | mark           | 文字中要突顯的部分   |
 | nav            | Defines navigation links |
 | summary        | 定義 `<details>` 元素之可見標題 |
