@@ -1,5 +1,6 @@
 # 儲存 (Web Storage)
 
+* 比 Cookies 更大、更有彈性的的儲存
 * 以 key-value 的型式來儲存資料
 * 建議每個網站儲存的大小為 5MB
 * localStorage 跟 sessionStorage 使用方式一樣，只要替換物件名稱就可以了。

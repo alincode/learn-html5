@@ -1,5 +1,6 @@
 # offline web application (離線網路應用程式)
 
+* 將部分常用的網頁內容 cache 起來
 * MIME type: text/cache-manifest
 * 當 Mainfest 的檔案被修改時，瀏覽器會重新下載儲存的檔案。
 * [应用缓存初级使用指南 - html5rocks   ](https://www.html5rocks.com/zh/tutorials/appcache/beginner/)

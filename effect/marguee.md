@@ -1,8 +1,10 @@
 # Marguee 跑馬燈
 
-### overflow:-webkit-marquee;
+[demo](https://www.tutorialspoint.com/html/html_marquees.htm)
 
-* `讓 Chrome 可以順利運作跑馬燈`
+### overflow:-webkit-marquee
+
+* 讓 Chrome 可以順利運作跑馬燈
 
 ### marguee-direction
 
@@ -25,4 +27,4 @@
 
 ### marquee-speed
 
-* `跑馬燈的速度調整`
+* 跑馬燈的速度調整

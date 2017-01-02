@@ -1,5 +1,7 @@
 # Indexed Database
 
+Key-value 的本地資料庫
+
 ### 介面
 
 * IDBFactory：建立或開始 Indexed Database

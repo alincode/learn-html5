@@ -1,6 +1,6 @@
 # transforms
 
-**名詞**
+**專有名詞**
 
 * angle 角度
 * rotate 旋轉

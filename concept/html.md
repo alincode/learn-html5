@@ -1,4 +1,4 @@
-# HTML
+# HTML5
 
 * 不分大小寫
 
@@ -24,3 +24,7 @@ The content of the document......
 </body>
 </html>
 ```
+
+### 鍵盤事件順序
+
+`onkeydown ---> onkeypress ---> onkeyup`
