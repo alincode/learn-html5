@@ -20,6 +20,8 @@
 
 **範例**
 
+![html video](http://i.imgur.com/FsuEJ6t.png)
+
 ```html
 <video width="320" height="240" autoplay>
   <source src="movie.mp4" type="video/mp4">
@@ -256,5 +258,3 @@ http://www.w3schools.com/TagS/av_prop_defaultplaybackrate.asp
 <td>YES</td>
 </tr>
 </tbody></table>
-
-

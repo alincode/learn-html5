@@ -16,6 +16,18 @@
 
 * arc
 
+## 範例
+
+![html canvas](http://i.imgur.com/uihyz3H.png)
+
+```js
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+```
+
 ## 屬性
 
 **lineJoin**

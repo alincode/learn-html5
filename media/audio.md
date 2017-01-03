@@ -55,7 +55,9 @@ In HTML5, there are 3 supported audio formats: MP3, Wav, and Ogg.
 
 **範例**
 
-```
+![html audio](http://i.imgur.com/HtpegQ3.png)
+
+```html
 <audio controls>
   <source src="horse.ogg" type="audio/ogg">
   <source src="horse.mp3" type="audio/mpeg">
