@@ -50,7 +50,7 @@ footer address {...}
 }
 ```
 
-### 常見`錯誤`的使用
+### 常見錯誤的使用
 
 **錯誤一**
 
@@ -69,3 +69,8 @@ footer >> address {...}
 ```
 footer ~ address {...}
 ```
+
+**延伸閱讀**
+
+* [CSS4 selector 測試](http://css4-selectors.com/browser-selector-test/)
+* [W3C Selectors Level 4 - W3C Working Draft 2](https://www.w3.org/TR/selectors4/)
