@@ -258,3 +258,7 @@ http://www.w3schools.com/TagS/av_prop_defaultplaybackrate.asp
 <td>YES</td>
 </tr>
 </tbody></table>
+
+**延伸閱讀**
+
+* [【O專欄】備受矚目的 HTML5 Video標籤 | T客邦 - 我只推薦好東西](http://www.techbang.com/posts/2025-o-column-bets-html5-video-tag)
