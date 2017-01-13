@@ -51,5 +51,6 @@
    * [Indexed Database](offline/indexed-database.md)
 * [整合](integration/README.md)
    * [Server-Sent Events](integration/server-sent-events.md)
+* [學習資源](resource/README.md)
 * [常見問題](question/README.md)
 * [課程服務](consulting/README.md)
