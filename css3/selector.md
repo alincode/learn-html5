@@ -72,5 +72,6 @@ footer ~ address {...}
 
 **延伸閱讀**
 
+* [The 30 CSS Selectors You Must Memorize by Tutplus](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 * [CSS4 selector 測試](http://css4-selectors.com/browser-selector-test/)
 * [W3C Selectors Level 4 - W3C Working Draft 2](https://www.w3.org/TR/selectors4/)
