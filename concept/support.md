@@ -30,3 +30,8 @@
 
 *  當成普通的 `<input type="text">`
 *  不檢查資料格式
+
+**延伸閱讀**
+
+* [Can I Use?](http://caniuse.com/)
+* [支援度測試](http://html5test.com/)
