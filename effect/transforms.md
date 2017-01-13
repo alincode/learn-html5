@@ -43,7 +43,7 @@ div {
 
 ## 3D
 
-### `rotate` 旋轉
+### rotate 旋轉
 
 * rotateX
 * rotateY
@@ -54,13 +54,53 @@ div {
 transform: rotate3d(1, 0, 0, 60deg);
 ```
 
-### `matrix3d` 矩陣
+### matrix3d 矩陣
 
 * * matrix `自由度最高`
 
 matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
 
 Defines a 3D transformation, using a 4x4 matrix of `16 values`
+
+### 範例
+
+[demo](https://codepen.io/alincode/pen/oBbbVe)
+
+```html
+<div class="example">
+    <div class="profile">
+      <div class="profile-img">
+        <img src="http://alincode.github.io/blog/assets/images/profile.jpg" width="200" height="200" />
+        </div>
+      <div class="profile-info">
+        <h1>alincode</h1>
+        <ul>
+          <li>軟體技術顧問</li>
+          <li>企業內訓講師</li>  
+        </ul>
+      </div>
+    </div>
+  </div>
+```
+
+```css
+.example {
+  height:200px;
+  overflow:hidden;
+}
+
+.profile {
+	width: 200px;
+	-moz-transition:margin-top .5s ease-out;
+	-webkit-transition:margin-top .5s ease-out;
+	-o-transition:margin-top .5s ease-out;
+	-ms-transition:margin-top .5s ease-out;
+}
+
+.profile:hover {
+  margin-top:-200px;
+}
+```
 
 ### 延伸閱讀
 
