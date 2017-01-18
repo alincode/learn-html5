@@ -9,10 +9,10 @@
 
 **範例**
 
-`<div class="nickname" onclick="">alincode</div>`
+`<div class="nickname" id="nicknameId" onclick="">alincode</div>`
 
+class 和 id 都是我們的屬性，onclick 是我們的事件。
 
 ### 縮寫
 
 * DOM - Document Object Model
-
