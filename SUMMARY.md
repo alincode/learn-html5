@@ -36,7 +36,7 @@
    * [漸變效果](effect/gradient.md)
    * [跑馬燈](effect/marguee.md)
    * [媒體查詢](effect/media-queries.md)
-   * [2D 3D](effect/transforms.md)
+   * [轉場效果 (Transform)](effect/transform.md)
 * [整合應用](file-and-hardcore-support/README.md)
   * [地理定位](file-and-hardcore-support/geolocation.md)
   * [拖放](file-and-hardcore-support/drag-and-drop.md)

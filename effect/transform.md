@@ -1,4 +1,4 @@
-# transforms
+# Transform 轉場效果
 
 **專有名詞**
 
@@ -22,22 +22,41 @@
 **Transform Methods**
 
 * matrix(n,n,n,n,n,n): using a matrix of six values
-* `translate(x,y)`
+* translate(x,y)
 * translateX(n)
 * translateY(n)
 * scale(x,y)
 * scaleX(n)
 * scaleY(n)
-* `rotate(angle)`
+* rotate(angle)
 * skew(x-angle,y-angle)
 * skewX(angle)
 * skewY(angle)
 
-**範例**
+### 範例
+
+#### 範例一
 
 ```css
 div {
     transform: rotateX(-70deg);
+}
+```
+
+#### 範例二
+
+[demo](http://www.w3schools.com/css/tryit.asp?filename=trycss3_transition1)
+
+```css
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+div:hover {
+    width: 300px;
 }
 ```
 
@@ -102,21 +121,13 @@ Defines a 3D transformation, using a 4x4 matrix of `16 values`
 }
 ```
 
-### 延伸閱讀
-
-* [CSS3 3D Transforms - w3school ](http://www.w3schools.com/css/css3_3dtransforms.asp)
-* [CSS 3D 旋轉 rotate3d 與 translate3d - puritys.me](https://www.puritys.me/docs-blog/article-353-CSS-3D-%E6%97%8B%E8%BD%89-rotate3d-%E8%88%87-translate3d.html)
-* [CSS transform 能旋轉、傾斜、縮放變形 box - 網頁藝術思考](http://boohover.pixnet.net/blog/post/35341387-%E6%97%8B%E8%BD%89%E3%80%81%E5%82%BE%E6%96%9C%E3%80%81%E7%B8%AE%E6%94%BE%E7%9A%84%E8%AE%8A%E5%BD%A2%E6%95%88%E6%9E%9C-transform-(css-prope)
-* [CSS3 Animation Transform Rotate - Village Park Source](https://youtu.be/fLgmlWEybuM?t=2m26s) (video)
-* [CSS3 3D Transforms - SnoOpy - Interactive Development ](https://www.youtube.com/watch?v=yOsk3_sc0bc) (video)
-
-### 3D Transforms 瀏覽器支援度
+### 瀏覽器支援度
 
 -webkit-, -moz-, or -o- specify the first version that worked with a prefix.
 
 **範例**
 
-```cs
+```css
 div {
     -ms-transform: rotate(20deg); /* IE 9 */
     -webkit-transform: rotate(20deg); /* Safari */
@@ -182,3 +193,11 @@ div {
     <td>23.0<br>15.0&nbsp;-webkit-</td>
     </tr>
 </tbody></table>
+
+### 延伸閱讀
+
+* [CSS3 3D Transforms - w3school ](http://www.w3schools.com/css/css3_3dtransforms.asp)
+* [CSS 3D 旋轉 rotate3d 與 translate3d - puritys.me](https://www.puritys.me/docs-blog/article-353-CSS-3D-%E6%97%8B%E8%BD%89-rotate3d-%E8%88%87-translate3d.html)
+* [CSS transform 能旋轉、傾斜、縮放變形 box - 網頁藝術思考](http://boohover.pixnet.net/blog/post/35341387-%E6%97%8B%E8%BD%89%E3%80%81%E5%82%BE%E6%96%9C%E3%80%81%E7%B8%AE%E6%94%BE%E7%9A%84%E8%AE%8A%E5%BD%A2%E6%95%88%E6%9E%9C-transform-(css-prope)
+* [CSS3 Animation Transform Rotate - Village Park Source](https://youtu.be/fLgmlWEybuM?t=2m26s) (video)
+* [CSS3 3D Transforms - SnoOpy - Interactive Development ](https://www.youtube.com/watch?v=yOsk3_sc0bc) (video)
