@@ -6,6 +6,8 @@
 </footer>
 ```
 
+### 種類
+
 **universal 通用選擇器**
 
 ```
@@ -70,7 +72,15 @@ footer >> address {...}
 footer ~ address {...}
 ```
 
-**延伸閱讀**
+### 更多範例
+
+```css
+li:nth-child(4n){
+  margin-right:0px;
+}
+```
+
+### 延伸閱讀
 
 * [The 30 CSS Selectors You Must Memorize by Tutplus](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 * [CSS4 selector 測試](http://css4-selectors.com/browser-selector-test/)
